@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --foreground-rgb: 0, 0, 0; --background-start-rgb: 250, 245, 255; --background-end-rgb: 245, 240, 255; }
+body { color: rgb(var(--foreground-rgb)); background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb))); min-height: 100vh; }
+
+@layer utilities {
+  .glass { @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-lg; }
+  .card-hover { @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1; }
+}
