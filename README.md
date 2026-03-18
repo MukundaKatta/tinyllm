@@ -78,6 +78,3 @@ tinyllm/
 └── package.json
 ```
 
-## License
-
-MIT
